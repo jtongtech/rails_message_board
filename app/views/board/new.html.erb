@@ -1,0 +1,15 @@
+<h1>Add a post</h1>
+
+<%= form_for @board do |f| %>
+    <div>
+        <%= f.label :title %>
+            <%= f.text_field :title %>
+    </div>
+    <div>
+        <%= f.label :message %>
+            <%= f.text_area :message, size: '60x6' %>
+    </div>
+    <div>
+        <%= f.submit %>
+    </div>
+    <% end %>
